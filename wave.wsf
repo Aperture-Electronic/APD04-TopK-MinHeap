@@ -1,0 +1,64 @@
+# Indago Command Script (Sat, 28 Jun 2025 03:51:44 +0800)
+#
+# Version 23.09.001-s
+
+#
+# Signal List
+#
+waveform add {apd04_topk_minheap_tb.DUV.aresetn}
+waveform add -radix d {apd04_topk_minheap_tb.DUV.s_axis_din_tdata}
+waveform add {apd04_topk_minheap_tb.DUV.s_axis_din_tlast}
+waveform add {apd04_topk_minheap_tb.DUV.s_axis_din_tready}
+waveform add {apd04_topk_minheap_tb.DUV.s_axis_din_tvalid}
+waveform add {apd04_topk_minheap_tb.DUV.heap_ptr}
+waveform add {apd04_topk_minheap_tb.DUV.din_valid}
+waveform add {apd04_topk_minheap_tb.DUV.swap_valid}
+waveform add {apd04_topk_minheap_tb.DUV.swap_execute}
+waveform add -radix d {apd04_topk_minheap_tb.DUV.s_axis_din_tdata}
+waveform add {apd04_topk_minheap_tb.DUV.swap_at_full}
+waveform add -radix d {apd04_topk_minheap_tb.DUV.swap_data_cache}
+waveform add -radix d {apd04_topk_minheap_tb.DUV.cmp_lchild}
+waveform add {apd04_topk_minheap_tb.DUV.cmp_rd_a_addr}
+waveform add -radix d {apd04_topk_minheap_tb.DUV.heap_pb_rdata}
+waveform add {apd04_topk_minheap_tb.DUV.lchild_less_rchild}
+waveform add {apd04_topk_minheap_tb.DUV.sift_stage}
+waveform add -radix d {apd04_topk_minheap_tb.DUV.cmp_rd_a_addr}
+waveform add -radix d {apd04_topk_minheap_tb.DUV.cmp_rd_b_addr}
+waveform add {apd04_topk_minheap_tb.DUV.m_axis_dout_tvalid}
+waveform add {apd04_topk_minheap_tb.DUV.m_axis_dout_tdata}
+waveform add {apd04_topk_minheap_tb.DUV.m_axis_dout_tlast}
+waveform add -radix d {apd04_topk_minheap_tb.DUV.minimum_leaf}
+waveform add {apd04_topk_minheap_tb.DUV.minimum_leaf_addr}
+waveform add {apd04_topk_minheap_tb.DUV.minimum_leaf_addr_safe}
+waveform add {apd04_topk_minheap_tb.DUV.left_leaf_addr}
+waveform add {apd04_topk_minheap_tb.DUV.right_leaf_addr}
+waveform add {apd04_topk_minheap_tb.DUV.nxt_right_leaf_ovfl}
+waveform add {apd04_topk_minheap_tb.DUV.nxt_left_leaf_ovfl}
+waveform add {apd04_topk_minheap_tb.DUV.right_leaf_ovfl}
+waveform group add -expand {RAM Read}
+waveform add -in_group {RAM Read} -radix d {apd04_topk_minheap_tb.DUV.heap_pa_raddr}
+waveform add -in_group {RAM Read} -radix d {apd04_topk_minheap_tb.DUV.heap_pa_rdata}
+waveform add -in_group {RAM Read} -radix d {apd04_topk_minheap_tb.DUV.heap_pb_raddr}
+waveform add -in_group {RAM Read} -radix d {apd04_topk_minheap_tb.DUV.heap_pb_rdata}
+waveform add -in_group {RAM Read} {apd04_topk_minheap_tb.DUV.sift_dn_last_swap_addr}
+waveform group add -expand {RAM Write}
+waveform add -in_group {RAM Write} -radix d {apd04_topk_minheap_tb.DUV.heap_pa_waddr}
+waveform add -in_group {RAM Write} -radix d {apd04_topk_minheap_tb.DUV.heap_pa_wdata}
+waveform add -in_group {RAM Write} {apd04_topk_minheap_tb.DUV.heap_pa_wen}
+waveform add -in_group {RAM Write} -radix d {apd04_topk_minheap_tb.DUV.heap_pb_waddr}
+waveform add -in_group {RAM Write} -radix d {apd04_topk_minheap_tb.DUV.heap_pb_wdata}
+waveform add -in_group {RAM Write} {apd04_topk_minheap_tb.DUV.heap_pb_wen}
+waveform add -in_group {RAM Write} -radix d {apd04_topk_minheap_tb.DUV.heap_top_cache}
+waveform add -in_group {RAM Write} {apd04_topk_minheap_tb.DUV.heap_dpsram.ram}
+waveform add -radix d -pin {apd04_topk_minheap_tb.DUV.clk}
+waveform add -pin {apd04_topk_minheap_tb.DUV.state}
+waveform add -pin {apd04_topk_minheap_tb.data_idx}
+
+#
+# Visible Time Range
+#
+waveform xview limits 0ns 40,587ns
+#
+# Insertion Point
+#
+waveform insertion {,31}

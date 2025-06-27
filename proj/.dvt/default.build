@@ -1,0 +1,6 @@
++dvt_init+xcelium.xrun -top apd04_topk_minheap -uvm
+pkg/*.sv
+if/*.sv
+src/**/*.sv
+tb/**/*.sv
++incdir+include

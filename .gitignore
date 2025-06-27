@@ -1,0 +1,75 @@
+# DVT files
+dvt
+proj/.dvt/*
+!proj/.dvt/*.build
+!proj/.dvt/*.xml
+proj/.project
+
+# Quartus files
+quartus/db
+quartus/incremental_db
+quartus/output_files
+quartus/dni
+quartus/qdb
+quartus/tmp*
+quartus/*.txt
+*.qws
+
+# Xcelium files
+xrun
+xrun_ns
+
+# Synplify files
+fpga/*
+!fpga/*.prj
+synlog.tcl
+vcs
+vcs.log
+
+# Design compiler files
+dc
+
+# Spyglass files
+spyglass
+
+# Vivado files
+vivado/**/*.cache
+vivado/**/*.hw
+vivado/**/*.ip_user_files
+vivado/**/*.sim
+vivado/**/*.ioplanning
+
+vivado/**/*.jou
+vivado/**/*.log
+vivado/**/*.runs
+vivado/**/synth*
+
+# Visual Studio Code files
+.vscode
+
+# Libraries files
+lib/bin
+lib/build
+
+# Log and backup files
+*.log
+*.bak
+*.history
+
+# Script files
+*.json
+*.sh
+
+# Library files
+*.o
+*.so
+
+# Document tex files
+*.aux
+*.out
+*.synctex.gz
+*.toc
+*.pdf
+
+# Filelists
+*.f
